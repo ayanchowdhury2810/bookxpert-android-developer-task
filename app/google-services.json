@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "875633319413",
+    "project_id": "bookxpert-task",
+    "storage_bucket": "bookxpert-task.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875633319413:android:509fe8f225abcecdad54bc",
+        "android_client_info": {
+          "package_name": "com.android.bookxpert_android_developer_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875633319413-7s34jc9urpn7b3om5mm4tf4ib182krj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.bookxpert_android_developer_task",
+            "certificate_hash": "f0cdc3be1c2a2844e2c2c2910889485b02057195"
+          }
+        },
+        {
+          "client_id": "875633319413-359rj0tkjher6ldesjv6ufeh0v378fpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh_YO11SRRioXVIk48mjdZfPmNLr4aKX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875633319413-359rj0tkjher6ldesjv6ufeh0v378fpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
