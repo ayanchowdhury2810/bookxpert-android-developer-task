@@ -21,32 +21,6 @@ class ApiResponseInterceptor: Interceptor {
                 val contentType = response.body?.contentType()
                 val jsonObject = JSONObject(response.body?.string().orEmpty())
 
-//                if(request.url.toString().startsWith(Constants.BASE_URL+"verify-otp"))
-//                {
-//                    if(jsonObject.has("data"))
-//                    {
-//                        var data = jsonObject.get("data")
-//                        Log.e("data - verify-otp",""+data)
-//                        if(data != null && data is JSONArray)
-//                        {
-//                            jsonObject.put("data",JSONObject())
-//                        }
-//                    }
-//                }
-                Log.d("okhttp - response", jsonObject.toString())
-//                if (jsonObject.has(Constants.ENCRYPTED_DATA_KEY)) {
-//                    Log.d("okhttp - encrypted - response", jsonObject.toString())
-//                    val strToDecrypt = jsonObject.get(Constants.ENCRYPTED_DATA_KEY).toString()
-//                    val encryptedResponse = EncryptionDecryptionHelper.decrypt(
-//                        strToDecrypt
-//                    )
-//                    val body = encryptedResponse.toString().toResponseBody(contentType)
-//                   return response.newBuilder().body(body).build()
-//                } else {
-//                    val body = jsonObject.toString().toResponseBody(contentType)
-//                    return response.newBuilder().body(body).build()
-//                }
-
                 val body = jsonObject.toString().toResponseBody(contentType)
                 return response.newBuilder().body(body).build()
 
@@ -100,23 +74,6 @@ class ApiResponseInterceptor: Interceptor {
                 Log.e("okhttp - response body - 400", jsonObject.toString())
 
                 val body = jsonObject.toString().toResponseBody(contentType)
-//                SessionManager.logout()
-
-//                try
-//                {
-//                    EatanceAdminApplication.getContext()
-//                        ?.let {
-//                            val localBroadcastManager = LocalBroadcastManager.getInstance(it)
-//                            val intent = Intent("force-logout")
-//                            intent.putExtra("message", "Session Expire")
-//                            localBroadcastManager.sendBroadcast(intent)
-//                        }
-//                }
-//                catch (ex: Exception)
-//                {
-//                    Log.e("send Broadcast",""+ex.toString())
-//                }
-
 
                 return response.newBuilder().body(body).build()
 
